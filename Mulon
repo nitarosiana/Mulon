@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pra Praktikum Mulon</title>
+</head>
+<body>
+	<h1>Hasil Praktikum Mulitimedia Online</h1>
+	<p>Nita Rosiana</p>
+	<p>1700016085</p>
+	<ul>
+		<li><a href="Praktikum 1.html">
+		Praktikum 1 - Canvas HTML</a></li>
+		<li><a href="Praktikum 2.html">
+		Praktikum 2 - Interaktifitas</a></li>
+	</ul>
+</body>
+</html>
