@@ -6,15 +6,25 @@
 </head>
 
 <style type="text/css">
-	canvas {background-color: #ccc; }
+	canvas {background-color: tosca; }
 </style>
 
 <body>
 
-	<canvas width ="1000" height="500" id="canvas"></canvas>
+	<canvas width ="800" height="400" id="canvas"></canvas>
 	<script type="text/javascript">
 		 var c=document.getElementById('canvas');
 		 var ctx=c.getContext('2d');
+		
+		
+		//Persegi 
+		 ctx.beginPath();
+		 ctx.rect(435,190,125,125);
+		 ctx.strokeStyle = "white";
+		 ctx.lineWidth = 5 ;
+		 ctx.fillStyle = "grey";
+		 ctx.fill();
+		 ctx.stroke();
 
 		 //Segitiga1
 		ctx.beginPath(); 
@@ -33,8 +43,8 @@
 		ctx.lineTo(900, 250); 
 		ctx.lineTo(800, 375); 
 		ctx.closePath(); 
-		ctx.strokeStyle = "blue";
-		ctx.fillStyle = blue";
+		ctx.strokeStyle = "green";
+		ctx.fillStyle = "green";
 		ctx.fill();
 		ctx.stroke();
 
@@ -44,7 +54,7 @@
 		 ctx.arc(500,250,175,0,2 * Math.PI);
 		 ctx.strokeStyle = "white";
 		 ctx.lineWidth = 5 ;
-		 ctx.fillStyle = "green";
+		 ctx.fillStyle = "maroon";
 		 ctx.fill();
 		 ctx.stroke();
 
@@ -56,14 +66,7 @@
 		 ctx.fill();
 		 ctx.stroke();
 
-		 //Persegi
-		 ctx.beginPath();
-		 ctx.rect(435,190,125,125);
-		 ctx.strokeStyle = "white";
-		 ctx.lineWidth = 5 ;
-		 ctx.fillStyle = "#4682B4";
-		 ctx.fill();
-		 ctx.stroke();
+		 
 
 		
 
