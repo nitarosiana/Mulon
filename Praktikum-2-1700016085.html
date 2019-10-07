@@ -1,0 +1,55 @@
+<html><head>
+	<title>Interaktifitas</title>
+<style type="text/css" media="screen">
+	canvas{
+		background-color: #ccc;
+	}
+</style></head>
+
+
+<body>
+
+<canvas height="500" width="1000" id="canvas">
+	
+</canvas>
+
+<script type="text/javascript">
+	
+	var c = document.getElementById('canvas');
+	var ctx = c.getContext("2d");
+
+	// membuat garis memakai mouse 
+	document.body.addEventListener('mousedown',drawline);
+	function drawline(e)
+	{
+		var x = e.offsetX;
+		var y = e.offsetY;
+		ctx.lineTo(x,y);
+		ctx.lineWidth = "2";
+		ctx.strokeStyle = 'black';
+		ctx.stroke();
+	}
+
+	window.addEventListener("keydown",checkKeyPress,false);
+
+	function checkKeyPress(key) {
+		if(key.keyCode == "13"){
+
+			ctx.fillStyle = 'brown';
+			ctx.fill();
+		}
+		else{
+			ctx.beginPath();
+			var x = e.offsetX;
+			var y = e.offsetY;
+			ctx.lineTo(x,y);
+			ctx.lineWidth = "2";
+			ctx.strokeStyle = 'black';
+			ctx.stroke();
+					
+		}
+	}
+</script>
+
+
+</body></html>
