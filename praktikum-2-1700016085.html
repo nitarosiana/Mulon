@@ -2,7 +2,7 @@
 <html>
 
 <head>
-		<title> Canvas HTML : My First Canvas App</title>
+		<title>Interaktifitas</title>
 </head>
 
 <style type="text/css">
@@ -26,14 +26,30 @@
 			var x=e.offsetX;
 			var y=e.offsetY;
 			ctx.lineTo(x,y);
-			ctx.lineWidth=2;
-			ctx.strokeStyle="#FFFFFF";
+			ctx.lineWidth= "2";
+			ctx.strokeStyle= 'black';
 			ctx.stroke();
 		}
+		 window.addEventListener( "keydown", checkKeyPress,false);
 		 
-		 
-		
-	</script>
+                 function checkKeyPress(key) {
+                        if (key.keyCode == "13") { 
+
+                        ctx.fillStyle = 'blue';
+                        ctx.fill();
+
+                                         }
+                                   
+                                         else {
+                                         ctx.beginPath();
+                                         var x=e.offsetX;
+			                 var y=e.offsetY;
+			                 ctx.lineTo(x,y);
+			                 ctx.lineWidth = "2";
+			                 ctx.strokeStyle = 'black';
+			                 ctx.stroke();
+                                                         }
+                                                        }
 
 </body>
 </html> 
